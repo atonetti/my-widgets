@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Days Left in Quarter</title>
+	<link rel="stylesheet"  href="css/days_left_in_quarter.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+	        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+	        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bigtext/1.0.1/bigtext.min.js"
+	        integrity="sha512-XL5rmsiapif7lxsCYwgQu5gmAvwuui+jwjgJ3aGU34vHD2i1wERAel3MdNzFIjH00YIjgWluK4AZDlwRk7VtYQ=="
+	        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/days_left_in_quarter.js"></script>
+</head>
+<body>
+<div class="countdown-widget">
+  <div class="countdown-heading">Left In The Quarter</div>
+  <div class="days"><span id="days">00</span></div>
+
+	<div class="time-boxes">
+    <div class="time-box" id="hours">00</div>
+    <div class="time-box"><span class="divider"></span></div>
+    <div class="time-box" id="minutes">00</div>
+    <div class="time-box"><span class="divider"></span></div>
+    <div class="time-box" id="seconds">00</div>
+	</div>
+  <hr />
+	<div class="countdown-date"><span id="eventDate"></span></div>
+</div>
+
+
+<script>
+updateCountdown();
+const interval = setInterval(updateCountdown, 1000);
+$(".countdown-widget").bigtext();
+</script>
+</body>
+</html>

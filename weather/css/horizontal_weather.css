@@ -1,0 +1,81 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+.filled .icon svg {
+    width: 75%;
+    min-width: 10vw;
+    margin: 2vw 0;
+    fill: white;
+}
+.not-filled .icon svg {
+    width: 75%;
+    margin: 2vw 0;
+    fill: #337EA9;
+}
+.widget {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: 900;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+}
+.widget.filled {
+    height: 48vw;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.column:first-child {
+    flex-basis: 30%;
+    width: 30%;
+}
+.column:nth-child(2) {
+    flex-basis: 15%;
+    width: 15%;
+}
+.column:nth-child(3) {
+    flex-basis: 40%;
+    width: 40%;
+    align-items: flex-start;
+}
+.column:last-child {
+    flex-basis: 15%;
+    width: 15%;
+}
+.temp {
+  font-weight: 900;
+  display: inline-block;
+}
+.temp::after {
+  position: relative;
+  top: 1vw;
+  left: 1vw;
+  content: '°F';
+  font-size: 0.5em;
+  vertical-align: top;
+}
+.not-filled {
+  color: #337EA9 !important;
+}
+.filled {
+  background-color: #337EA9;
+  color: white;
+  padding: 2vw;
+  border-radius: 2vw;
+}

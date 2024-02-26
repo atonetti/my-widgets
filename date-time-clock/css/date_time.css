@@ -1,0 +1,30 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 100%;
+  overflow: hidden;
+}
+#date-time-widget {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-weight: 900;
+  padding: 1.5vw;
+  width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#date-time-widget.filled {
+    height: 48vw;
+}
+.not-filled {
+  color: #337EA9 !important;
+}
+.filled {
+  background-color: #337EA9;
+  color: white;
+  padding: 2vw;
+  border-radius: 2vw;
+}

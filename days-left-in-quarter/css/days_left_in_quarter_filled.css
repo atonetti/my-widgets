@@ -1,0 +1,95 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+.countdown-widget {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 1vw;
+  background-color: #337EA9 !important;
+  color: white !important;
+  padding: 2vw;
+  border-radius: 2vw;
+  width: 95vw;
+  height: 100vw;
+}
+.countdown-widget > hr {
+  width: 90%;
+  margin: -10% auto -2% auto;
+  border: none;
+  background-color: #D9730D;
+  height: 4px;
+}
+.countdown-heading {
+  transform: scale(0.75);
+    color: white;
+}
+.days {
+  margin-bottom: 5%;
+    margin-top: 1%;
+  transform: scale(1.25);
+  color: white;
+}
+#days::after {
+  position: relative;
+  top: 5vw;
+  left: 2vw;
+  content: 'DAYS';
+  font-size: 0.2em;
+  vertical-align: top;
+  color: #D9730D;
+}
+.divider {
+  height: 100%;
+  border-left: 0.75vw solid #D9730D;
+  border-radius: 10px;
+  position: relative;
+  top: 10%;
+}
+.time-boxes {
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: row;
+      width: 90% !important;
+    margin: 0 auto;
+}
+.time-box {
+  flex-basis: 10%;
+  font-size: 20vw;
+  line-height: 1;
+  text-align: center;
+   color: white;
+}
+#hours::after {
+  content: '\aHOURS';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+#minutes::after {
+  content: '\aMINUTES';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+#seconds::after {
+  content: '\aSECONDS';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+.countdown-date {
+  transform: scale(0.4);
+  font-weight: bold;
+  color: white;
+}

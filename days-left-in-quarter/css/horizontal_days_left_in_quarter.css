@@ -1,0 +1,83 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+.countdown-widget {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.5vw;
+    width: 95vw;
+}
+.countdown-widget > hr {
+  width: 90%;
+  margin: -6% auto -2% auto;
+  border: none;
+  background-color: #D9730D;
+  height: 4px;
+}
+.countdown-heading {
+  transform: scale(0.75);
+    color: #337EA9;
+}
+.divider {
+  height: 100%;
+  border-left: 0.75vw solid #D9730D;
+  border-radius: 10px;
+  position: relative;
+  top: 10%;
+}
+.time-boxes {
+  display: flex !important;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90% !important;
+  margin: 0 auto;
+}
+.time-box {
+  flex-basis: 7%;
+  font-size: 14vw;
+  line-height: 1;
+  text-align: center;
+   color: #337EA9;
+}
+#days::after {
+  content: '\a DAYS';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+#hours::after {
+  content: '\a HOURS';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+#minutes::after {
+  content: '\a MINUTES';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+#seconds::after {
+  content: '\a SECONDS';
+  white-space: pre;
+  font-size: 3.5vw;
+  position: relative;
+  top: -35%;
+  color: #D9730D;
+}
+.countdown-date {
+  transform: scale(0.4);
+  font-weight: bold;
+  color: #337EA9;
+}
